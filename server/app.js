@@ -10,7 +10,7 @@ app.use(function(req, res, next) {
   next();
 });
 
-app.get('/', (req, res) =>
+app.get('/next-shift', (req, res) =>
   res.json(require('./responses/shift-size-default.json'))
 );
 
