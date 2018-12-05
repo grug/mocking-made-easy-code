@@ -21,12 +21,10 @@ export class SomeComponent extends React.Component {
     return (
       <>
         <h1>Dave's shift size thingy</h1>
-        <div>
-          <p>Your previous shift size: {this.state.previousShiftSize}</p>
-          {this.state.nextShiftSize && (
-            <p>Your new shift size: {this.state.nextShiftSize}</p>
-          )}
-        </div>
+        <p>Your previous shift size: {this.state.previousShiftSize}</p>
+        {this.state.nextShiftSize && (
+          <p>Your new shift size: {this.state.nextShiftSize}</p>
+        )}
       </>
     );
   }
