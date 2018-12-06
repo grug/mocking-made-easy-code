@@ -6,15 +6,6 @@ export const mocks: Scenarios = {
     {
       url: /next-shift/,
       method: 'GET',
-      response: { shiftSize: 'Large' } as Shift,
-      responseCode: 200,
-      delay: 250
-    }
-  ],
-  medium: [
-    {
-      url: /next-shift/,
-      method: 'GET',
       response: { shiftSize: 'Medium' } as Shift,
       responseCode: 200,
       delay: 250

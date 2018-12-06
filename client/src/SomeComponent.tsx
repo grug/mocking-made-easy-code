@@ -23,7 +23,13 @@ export class SomeComponent extends React.Component {
         <h1>Dave's shift size thingy</h1>
         <p>Your previous shift size: {this.state.previousShiftSize}</p>
         {this.state.nextShiftSize && (
-          <p>Your new shift size: {this.state.nextShiftSize}</p>
+          <div>
+            <p>Your new shift size: {this.state.nextShiftSize}</p>
+            <p>Before starting a new shift, don't forget to make sure your contract is signed!</p>
+          </div>
+        )}
+        {this.state.nextShiftSize === 'Large' && (
+          <p><strong>Be prepared to put in a mighty big shift!</strong></p>
         )}
       </>
     );

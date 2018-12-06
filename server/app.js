@@ -11,7 +11,10 @@ app.use(function(req, res, next) {
 });
 
 app.get('/next-shift', (req, res) =>
-  res.json(require('./responses/shift-size-default.json'))
+  setTimeout(
+    () => res.json(require('./responses/shift-size-default.json')),
+    2000
+  )
 );
 
 app.listen(3000, () => console.log(`Dave's sick API server is running now!`));
