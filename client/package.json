@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js",
-    "start:prod": "webpack-dev-server --config webpack.prod.js"
+    "start:prod": "webpack-dev-server --config webpack.prod.js",
+    "cypress:open": "cypress open"
   },
   "dependencies": {
     "@types/react": "^16.7.6",
@@ -14,6 +15,7 @@
     "react-dom": "^16.6.3"
   },
   "devDependencies": {
+    "cypress": "^3.1.5",
     "data-mocks": "^2.2.0",
     "html-webpack-plugin": "^3.2.0",
     "source-map-loader": "^0.2.4",
